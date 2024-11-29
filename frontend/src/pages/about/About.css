@@ -1,0 +1,74 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 10%;
+
+
+ 
+    -webkit-animation-name: about;
+  animation-name: about;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes about {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  }
+  @keyframes about {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+     background-color: antiquewhite;
+     text-align: center;
+     padding: 1rem;
+}
+
+.box-about-gauche {
+   /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;*/
+    flex: 1 1 5rem;
+   
+}
+
+.box-about-gauche img {
+    width: 100%;
+    border: 1px solid rgb(172, 47, 69);
+    padding: 1rem;
+}
+.box-about-milieu{
+    flex: 1 1 5rem;
+}
+/* */.box-about-milieu button {
+    width: 9rem;
+} 
+
+.about-athena {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+/*event click caché*/
+.box-about-droite-cache {
+    display: none;
+
+}
+
+@media(max-width:1000px) {
+    .box-about-gauche,.about-container {
+        flex-direction: column;
+    }
+}

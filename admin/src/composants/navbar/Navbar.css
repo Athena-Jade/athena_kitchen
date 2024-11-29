@@ -1,0 +1,120 @@
+.navbar {
+    padding: 1rem 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    background-image: url("../../assets/img_header.jpg");
+    max-width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.navbar h1 {
+    color: rgb(224, 6, 43);
+}
+
+.navbar span {
+    color: black;
+    font-weight: 600;
+    font-style: italic;
+    background: #00000012;
+}
+
+.navbar button {
+    background-color: transparent;
+    font-size: 1rem;
+    color: white;
+    background: rgb(172, 47, 69);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 8rem;
+    padding: 0.5rem;
+}
+
+.navbar button:hover {
+    color: black;
+}
+
+
+.navbar-profile p {
+    font-style: italic;
+    background-color: #fbf9f738;
+    font-weight: 800;
+}
+
+.nav-profile-liste li {
+    background-color: rgb(172, 47, 69);
+    /* */
+    padding: 0.60rem;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+
+}
+
+.nav-profile-liste {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+.nav-profile-liste li:hover {
+    color: black;
+
+}
+
+
+
+
+
+
+@media(max-width:1050px) {
+    .navbar .logo {
+        width: 140px;
+    }
+
+}
+
+@media(max-width:900px) {
+    .navbar .logo {
+        width: 140px;
+    }
+
+
+}
+
+
+@media(max-width:750px) {
+    .logo {
+        margin-top: 0rem;
+    }
+
+    .navbar-profile img {
+        margin-left: 9px;
+
+    }
+
+
+}
+
+
+@media(max-width:450px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .navbar button {
+        font-size: 10px;
+    }
+}

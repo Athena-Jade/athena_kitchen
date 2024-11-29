@@ -1,0 +1,83 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    max-width: 100%;
+    padding: 1rem;
+    text-transform: uppercase;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+
+}
+
+/* */
+nav .logo h1 {   
+    color: rgb(224, 6, 43);
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+ul li a {
+    color: black;
+}
+
+nav .logos-reduits {
+    display: none;
+    position: absolute;
+    top: 1.75rem;
+    right: -1.5rem;
+    flex-direction: column;
+    width: 3rem;
+    height: 2rem;
+    margin-right: 1rem;
+    color: rgb(229, 19, 54);
+
+
+}
+
+
+
+li a:hover {
+    background-color: rgb(229, 19, 54);
+    padding: 1rem;
+    color: white;
+}
+
+
+@media(max-width:500px) {
+    nav .logos-reduits {
+        display: flex;
+
+    }
+
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul.navbar-menu {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+}

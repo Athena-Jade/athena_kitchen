@@ -1,0 +1,33 @@
+.recipe h1 {
+    text-align: center;
+    padding: 1rem;
+}
+
+/*aligner les 3 photos sur meme ligne*/
+/*  NE PAS METTRE align-items: center;  */
+.recipe-display-list {
+   /* */display: flex;
+    justify-content: center;
+    gap: 1rem;
+     flex-wrap: wrap; 
+
+    /* display: grid;
+   grid-template-columns:repeat(auto-fill,minmax(30%, 1fr));
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;*/
+}
+
+
+/**/
+
+
+
+@media(max-width:900px) {
+    
+
+    .recipe-item-droite {
+        margin-right: 25%;
+        margin-left: 25%;
+    }
+}

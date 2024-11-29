@@ -1,0 +1,48 @@
+.sidebar {
+    width: 100%;
+    border-top: 0;
+    font-size: max(1vw, 10px);
+    background-color: antiquewhite;
+    padding: 1rem;
+}
+
+.sidebar-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+
+}
+
+.sidebar-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-right: 0;
+    padding: 8px 10px;
+    border-radius: 3px 0px 0px 3px;
+    cursor: pointer;
+}
+
+.sidebar-option p:hover{
+    letter-spacing: 2px;
+    color: rgb(224, 6, 43);
+    font-weight: 600;
+}
+.sidebar-option p{
+    font-size: 1.25rem;
+}
+/* témoin de la page consultée*/
+.sidebar-option.active {  
+    background-color: white;
+   
+}
+
+
+
+@media (max-width:900px) {
+    .sidebar-option p {
+        display: none;
+    }
+}
